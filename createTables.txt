@@ -14,7 +14,6 @@
 
 -- CREATE TABLE grocery_list(
 -- 	grocery_id SERIAL PRIMARY KEY, 
--- 	ingredients VARCHAR(300) NOT NULL, 
 -- 	user_id INT NOT NULL REFERENCES users(user_id),
 -- 	recipe_id INT NOT NULL REFERENCES recipe(recipe_id)
 -- );
@@ -26,3 +25,6 @@
 -- 	recipe_id INT NOT NULL REFERENCES recipe(recipe_id),
 -- 	user_id INT NOT NULL REFERENCES users(user_id)
 -- );
+
+-- INSERT INTO users(username, email, password) VALUES
+-- ('MaggieMay', 'asdf@asdf.com', '1234');
