@@ -1,0 +1,28 @@
+-- CREATE TABLE users(
+-- 	user_id SERIAL PRIMARY KEY, 
+-- 	username VARCHAR(60) UNIQUE NOT NULL, 
+-- 	email VARCHAR(60) UNIQUE NOT NULL, 
+-- 	password VARCHAR(60) UNIQUE NOT NULL
+-- );
+
+-- CREATE TABLE recipe(
+-- 	recipe_id SERIAL PRIMARY KEY, 
+-- 	ingredients VARCHAR(100) NOT NULL, 
+-- 	instructions VARCHAR(300) NOT NULL, 
+-- 	user_id INT NOT NULL REFERENCES users(user_id)
+-- );
+
+-- CREATE TABLE grocery_list(
+-- 	grocery_id SERIAL PRIMARY KEY, 
+-- 	ingredients VARCHAR(300) NOT NULL, 
+-- 	user_id INT NOT NULL REFERENCES users(user_id),
+-- 	recipe_id INT NOT NULL REFERENCES recipe(recipe_id)
+-- );
+
+-- CREATE TABLE occasions(
+-- 	occasion_id SERIAL PRIMARY KEY, 
+-- 	occasion_name VARCHAR(60) UNIQUE NOT NULL, 
+-- 	occasion_date DATE UNIQUE NOT NULL, 
+-- 	recipe_id INT NOT NULL REFERENCES recipe(recipe_id),
+-- 	user_id INT NOT NULL REFERENCES users(user_id)
+-- );
